@@ -30,6 +30,15 @@ namespace Towers
             }
         }
 
+        public void OnGUI()
+        {
+            if(GUI.Button(new Rect(20, 20, 20, 20), "add to int"))
+            {
+                prefabNo++;
+                Debug.Log(prefabNo);
+            }
+        }
+
         /// <summary>
         /// Checks whether the tower variable is null and if so returns true.
         /// </summary>
