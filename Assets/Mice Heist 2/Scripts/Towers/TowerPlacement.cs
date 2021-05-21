@@ -7,18 +7,25 @@ namespace Towers
     public class TowerPlacement : MonoBehaviour
     {
         [SerializeField] private GameObject towerPrefabCat;
+        [SerializeField] private GameObject towerPrefabCatRanged;
+        [SerializeField] private GameObject barrierPrefab;
         private GameObject tower;
 
-        private bool placingTower = true;
+        [SerializeField] private List<GameObject> prefabs = new List<GameObject>();
+        [SerializeField] private int prefabNo;
+        private int prefabIndex;
 
-        private Transform spot;
-
+        private void Update()
+        {
+            prefabIndex = prefabNo;
+        }
 
         private void OnMouseUp()
         {
             if (CanPlaceTower())
             {
-                tower = (GameObject)Instantiate(towerPrefabCat, transform.position, Quaternion.identity);
+
+                tower = Instantiate(prefabs[prefabIndex], new Vector3(transform.position.x, transform.position.y + 3, transform.position.z), Quaternion.identity);
                 
             }
         }

@@ -698,6 +698,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefabCat: {fileID: 2321707140289196247, guid: 99ee6ca084a6cc74f9a08493c3265944, type: 3}
+  towerPrefabCatRanged: {fileID: 0}
+  barrierPrefab: {fileID: 0}
+  prefabs: []
+  prefabNo: 0
 --- !u!1001 &1258839437
 PrefabInstance:
   m_ObjectHideFlags: 0
