@@ -5,13 +5,13 @@ using UnityEngine;
 namespace Towers
 {
 
-    // The class for the towers to inherit from
+    [System.Serializable]
     public class Tower 
     {
-        public float towerName;
-        public int towerCost;
+        public string towerName;
+        public int towerCost = 0;
         public float towerDamage;
-        public Mesh towerMesh;
+        public GameObject towerPrefab;
         
         
 

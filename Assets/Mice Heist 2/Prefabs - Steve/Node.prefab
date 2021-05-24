@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4678393648376336408}
   - component: {fileID: 2298979051756306803}
   - component: {fileID: 8846699068195814462}
-  - component: {fileID: 1947480896146700170}
+  - component: {fileID: 1148832180017768647}
   m_Layer: 0
-  m_Name: Spot
+  m_Name: Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f1338534635b3e7489b96a7d08b504f1, type: 2}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1947480896146700170
+--- !u!114 &1148832180017768647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,14 +105,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6479306379998335667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5205241f655b9ea43893f5b96b2ee75a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8260c0a6a2b1b85458c3802b00074d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefabCat: {fileID: 0}
-  towerPrefabCatRanged: {fileID: 0}
-  barrierPrefab: {fileID: 0}
-  prefabs:
-  - {fileID: 8212758384485892866, guid: b8389e626a7fec44a83bb572f388a4e9, type: 3}
-  - {fileID: 2321707140289196247, guid: 99ee6ca084a6cc74f9a08493c3265944, type: 3}
-  - {fileID: 8604731087773355311, guid: 657b5e9a033ab77409e0f7653df21aab, type: 3}
-  prefabNo: 0
+  hoverColor: {r: 0.48534998, g: 1, b: 0.2584905, a: 1}
+  notEnoughColor: {r: 1, g: 0.2584905, b: 0.2584905, a: 1}
+  posOffset: {x: 0, y: 0, z: 0}
+  tower: {fileID: 0}
