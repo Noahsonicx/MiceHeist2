@@ -8,7 +8,7 @@ namespace Towers
         private Transform target;
 
         [Header("Bullet Attributes")]
-        public GameObject bulletEffectPrefab;
+        public GameObject bulletEffectPrefab; //Still need to make a prefab for this
         public float speed = 70f;
         public int damage = 50;
         public float explosionRadius = 0f;
