@@ -74,13 +74,14 @@ namespace Towers
 
         void Damage(Transform enemy)
         {
+            /*
             Enemy e = enemy.GetComponent<Enemy>();
 
             if (e != null)
             {
                 e.TakeDamage(damage);
             }
-
+            */
         }
 
         private void OnDrawGizmosSelected()
