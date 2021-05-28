@@ -74,13 +74,13 @@ namespace Towers
             // Timer for Shooting based on set fire rate
             if (fireCountdown <= 0)
             {
-                //Shoot();
+                Shoot();
                 fireCountdown = 1f / fireRate;
             }
 
             fireCountdown -= Time.deltaTime;
         }
-        /*
+        
             void Shoot()
             {
 
@@ -93,7 +93,7 @@ namespace Towers
                 }
                 Debug.Log("Shoot");
             }
-        */
+        
 
         /// <summary>
         /// Draws the range of the selected tower
