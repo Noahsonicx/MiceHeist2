@@ -5,14 +5,12 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10;
-
     private Transform target;
     private int wavePointIndex = 0;
 
+    [Header("Mouse Stats")]
     public int health = 100;
-
-    public int value = 50;
+    public int value = 25;
 
     private NavMeshAgent agent;
 

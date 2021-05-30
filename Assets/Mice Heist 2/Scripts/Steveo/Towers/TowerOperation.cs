@@ -80,19 +80,22 @@ namespace Towers
 
             fireCountdown -= Time.deltaTime;
         }
-        
-            void Shoot()
+        /// <summary>
+        /// This function controls the shooting mechanic for the towers
+        /// </summary>
+        void Shoot()
+        {
+            // Instantiate the bullet
+            GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            // Get the bullet script from the bullet
+            Bullet bullet = bulletGo.GetComponent<Bullet>();
+            // If it has the bullet script then set the bullet to seek the target
+            if (bullet != null)
             {
-
-
-                GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                Bullet bullet = bulletGo.GetComponent<Bullet>();
-                if (bullet != null)
-                {
-                    bullet.Seek(target);
-                }
-                Debug.Log("Shoot");
+                bullet.Seek(target);
             }
+            Debug.Log("Shoot");
+        }
         
 
         /// <summary>
