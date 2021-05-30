@@ -5,17 +5,18 @@ using UnityEngine.UI;
 
 public class WaveController : MonoBehaviour
 {
+    [Header("Wave Attributes")]
     public Transform enemyPrefab;
-
     public Transform spawnPoint;
-
+    public Transform spawnPoint2;
     public float timeBetweenWaves = 10f;
 
     private float countDown = 2f;
-
     private int waveNumber = 1;
-    public Text waveNumberText;
+    private bool spawnPointBool = true;
 
+    [Header("Wave UI Elements")]
+    public Text waveNumberText;
     public Text waveCountdownText;
 
     private void Update()
@@ -43,11 +44,17 @@ public class WaveController : MonoBehaviour
         }
 
         waveNumber++;
+        spawnPointBool = !spawnPointBool;
         Debug.Log("Wave incoming");
     }
 
     void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        if (spawnPointBool)
+        {
+            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        }
+        else
+            Instantiate(enemyPrefab, spawnPoint2.position, spawnPoint.rotation);
     }
 }
