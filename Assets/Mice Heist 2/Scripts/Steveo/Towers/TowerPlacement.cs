@@ -60,7 +60,7 @@ namespace Towers
             GameObject effect = (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
             Destroy(effect, 5f);
 
-            Debug.Log("Turret built. money left " + PlayerStats.Money);
+            Debug.Log("Tower built. money left " + PlayerStats.Money);
         }
          
 

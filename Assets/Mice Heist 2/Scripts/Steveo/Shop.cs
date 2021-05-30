@@ -8,6 +8,7 @@ namespace Towers
         [Header("Tower Details")]
         public Tower standardTower;
         public Tower rangedTower;
+        public Tower barrier;
 
         TowerPlacement towerPlacement;
 
@@ -36,6 +37,16 @@ namespace Towers
             Debug.Log("Ranged Tower selected");
             // Passes the Ranged Tower into towerPlacement.SelectTowerToPlace();
             towerPlacement.SelectTowerToPlace(rangedTower);
+        }
+        /// <summary>
+        /// Sets the Tower to place as the Barrier
+        /// </summary>
+        public void SelectBarrier()
+        {
+            Debug.Log("Barrier Selected");
+            // Passes the Barrier into towerPlacement.SelectTowerToPlace();
+            towerPlacement.SelectTowerToPlace(barrier);
+
         }
     }
 }

@@ -91,14 +91,14 @@ namespace Towers
         /// <param name="enemy">Transform of the hit enemy</param>
         void Damage(Transform enemy)
         {
-            /*
+            
             Enemy e = enemy.GetComponent<Enemy>();
 
             if (e != null)
             {
                 e.TakeDamage(damage);
             }
-            */
+            Debug.Log("Damage done");
         }
 
         /// <summary>
