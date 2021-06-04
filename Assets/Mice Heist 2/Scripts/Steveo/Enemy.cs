@@ -16,7 +16,9 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        target = waypoint.points[0];
+        Transform randomPoint = waypoint.points[Random.Range(0, waypoint.points.Length)];
+
+        target = randomPoint;
         agent = transform.GetComponent<NavMeshAgent>();
         agent.SetDestination(target.position);
     }
