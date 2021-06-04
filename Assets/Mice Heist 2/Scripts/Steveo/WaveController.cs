@@ -21,20 +21,24 @@ public class WaveController : MonoBehaviour
 
     private void Update()
     {
+        // When the countdown reaches 0 start spawning next wave
         if (countDown <= 0)
         {
             StartCoroutine(SpawnWave());
-            countDown = timeBetweenWaves;
+            countDown = timeBetweenWaves; // reset timer
         }
 
-        countDown -= Time.deltaTime;
+        countDown -= Time.deltaTime; // Counts down timer
 
-        countDown = Mathf.Clamp(countDown, 0, Mathf.Infinity);
+        countDown = Mathf.Clamp(countDown, 0, Mathf.Infinity); // clamps the timer to not fall below 0
 
         waveCountdownText.text = $"Next wave in: {string.Format("{0:00.00}", countDown)}";
         waveNumberText.text = "Wave: " + waveNumber.ToString();
     }
 
+    /// <summary>
+    /// Coroutine for spawning enemys one after another. Spawns the same amount of enemies as the wave number.
+    /// </summary>
     IEnumerator SpawnWave()
     {
         for (int i = 0; i < waveNumber; i++)
@@ -43,11 +47,14 @@ public class WaveController : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
 
-        waveNumber++;
-        spawnPointBool = !spawnPointBool;
+        waveNumber++; // Sets the wave number to next wave
+        spawnPointBool = !spawnPointBool; // This bool then switches so the next wave spawns at the other spawn point
         Debug.Log("Wave incoming");
     }
 
+    /// <summary>
+    /// This handles actually instantiaing the enemys at the 2 different spawn points, based on the bool that gets changed after each wave has spawned.
+    /// </summary>
     void SpawnEnemy()
     {
         if (spawnPointBool)

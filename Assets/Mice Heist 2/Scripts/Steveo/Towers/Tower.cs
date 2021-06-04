@@ -10,8 +10,7 @@ namespace Towers
     {
         // Tower class holds information for the towers, and then gets set in Shop.cs
         public string towerName;
-        public int towerCost = 0;
-        
+        public int towerCost = 0;        
         public GameObject towerPrefab;
         
         
