@@ -41,9 +41,14 @@ public class WaveController : MonoBehaviour
     /// </summary>
     IEnumerator SpawnWave()
     {
+        // create new int variable based off wavenumber to limit spawns at higher waves??
+        // Then can spawn in other variations of mice
+        //Create a range float to test for chance and if test true then spawn fast mouse
+
         for (int i = 0; i < waveNumber; i++)
         {
             SpawnEnemy();
+            //SpawnFastEnemy();
             yield return new WaitForSeconds(0.5f);
         }
 
@@ -64,4 +69,16 @@ public class WaveController : MonoBehaviour
         else
             Instantiate(enemyPrefab, spawnPoint2.position, spawnPoint.rotation);
     }
+
+    /*
+    public void SpawnFastEnemy()
+    {      
+        if (spawnPointBool)
+        {
+            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        }
+        else
+            Instantiate(enemyPrefab, spawnPoint2.position, spawnPoint.rotation);
+    }
+    */
 }
