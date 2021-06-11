@@ -4702,7 +4702,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.6666667
+  m_VoxelSize: 0.33333334
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 9fa232b038729c64db06773c9c730658, type: 2}
 --- !u!1 &771391743
@@ -5538,7 +5538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 98}
   m_SizeDelta: {x: 560.062, y: 205.159}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &885592879
@@ -6044,11 +6044,11 @@ RectTransform:
   m_Father: {fileID: 994562249}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &957855526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6196,7 +6196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.45323345, y: -0.0021170913, z: -0.0039034805, w: 0.89138085}
-  m_LocalPosition: {x: 0.36, y: 89.83, z: -83.44}
+  m_LocalPosition: {x: 0.5, y: 101.6, z: -92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10297,7 +10297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92beec36993c52488d05073352c3ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 600
+  startMoney: 500
   startLives: 20
   endPanel: {fileID: 978176146}
 --- !u!4 &1839032159
