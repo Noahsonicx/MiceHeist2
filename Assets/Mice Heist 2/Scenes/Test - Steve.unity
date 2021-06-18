@@ -3829,7 +3829,7 @@ MonoBehaviour:
   barrier:
     towerName: Barrier
     towerCost: 150
-    towerPrefab: {fileID: 8609081331417043677, guid: edca5222a88153d42b15709e14e088ad, type: 3}
+    towerPrefab: {fileID: 6705599724095584888, guid: 214185c86dee6cd429f315aeada8a182, type: 3}
 --- !u!1001 &638591841
 PrefabInstance:
   m_ObjectHideFlags: 0
