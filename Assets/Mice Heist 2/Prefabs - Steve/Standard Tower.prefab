@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 20
   fireRate: 1
-  partToRatoate: {fileID: 7947703984554073086}
+  partToRatoate: {fileID: 1247212962659410802}
   turnSpeed: 10
   enemytag: Enemy
   bulletPrefab: {fileID: 6721803747937267831, guid: e791f00c17505c446a50be3c6f1bfc76, type: 3}
