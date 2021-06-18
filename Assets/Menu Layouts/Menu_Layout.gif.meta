@@ -59,12 +59,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -73,7 +73,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,187 +133,19 @@ TextureImporter:
       name: Menu_Layout_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 21.333332
-        width: 10.666667
-        height: 10.666667
+        x: 2
+        y: 2
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 8, z: 8, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 9d3c69e0d86cac0c0800000000000000
       internalID: -4554609763994385447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 21.333332
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 225ed064e0e487320800000000000000
-      internalID: 2555878611744580898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_2
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 21.333332
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79b83c771bebbbfe0800000000000000
-      internalID: -1172133608572089449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 11.333333
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e097365c26276fca0800000000000000
-      internalID: -5983469286371133170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_4
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 11.333333
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ad00dfe60534edc0800000000000000
-      internalID: -3610702697334829663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_5
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 11.333333
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c04eb06d86eae59a0800000000000000
-      internalID: -6242360268197993460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1.333333
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5fd5aa9fc7f3aa20800000000000000
-      internalID: 3072571841821663066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_7
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 1.333333
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4f3a195263c2cf70800000000000000
-      internalID: 9206135415467818830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_Layout_8
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 1.333333
-        width: 10.666667
-        height: 10.666667
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3be166793698dda20800000000000000
-      internalID: 3088775980280848051
       vertices: []
       indices: 
       edges: []

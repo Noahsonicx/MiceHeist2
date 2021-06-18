@@ -17,5 +17,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("PauseMenu");
     }
+    public void Test()
+    {
+        SceneManager.LoadScene("Test - Steve");
+    }
 }
 
