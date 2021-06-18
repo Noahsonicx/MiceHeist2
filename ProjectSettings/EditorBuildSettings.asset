@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Mice Heist 2/Scenes/Test - Steve.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Mice Heist 2/Scenes/PauseMenu.unity
+    guid: c7250a1a48cb39345bac575ef188660c
+  - enabled: 1
+    path: Assets/Mice Heist 2/Scenes/MainMenu.unity
+    guid: 9fc1aa721eb83a34e8e09f4be734bd3c
+  - enabled: 1
+    path: Assets/Mice Heist 2/Scenes/OptionsMenu.unity
+    guid: 4e6db03ae26179d4485670bb6fe3d010
   m_configObjects: {}
