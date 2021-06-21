@@ -7,6 +7,7 @@ public class WaveController : MonoBehaviour
 {
     [Header("Wave Attributes")]
     public Transform enemyPrefab;
+    public Transform fastEnemyPrefab;
     public Transform spawnPoint;
     public Transform spawnPoint2;
     public float timeBetweenWaves = 10f;
@@ -14,6 +15,8 @@ public class WaveController : MonoBehaviour
     private float countDown = 2f;
     private int waveNumber = 1;
     private bool spawnPointBool = true;
+    [SerializeField ,Range(0,1)]private float fastSpawnChance = 0.2f;
+
 
     [Header("Wave UI Elements")]
     public Text waveNumberText;
@@ -40,15 +43,15 @@ public class WaveController : MonoBehaviour
     /// Coroutine for spawning enemys one after another. Spawns the same amount of enemies as the wave number.
     /// </summary>
     IEnumerator SpawnWave()
-    {
-        // create new int variable based off wavenumber to limit spawns at higher waves??
-        // Then can spawn in other variations of mice
-        //Create a range float to test for chance and if test true then spawn fast mouse
-
+    {        
         for (int i = 0; i < waveNumber; i++)
         {
             SpawnEnemy();
-            //SpawnFastEnemy();
+            // This gives the player a chance to have a few towers on the field before we hit them with a faster mouse.
+            if (waveNumber > 7)
+            {
+                SpawnFastEnemy();
+            }
             yield return new WaitForSeconds(0.5f);
         }
 
@@ -70,15 +73,22 @@ public class WaveController : MonoBehaviour
             Instantiate(enemyPrefab, spawnPoint2.position, spawnPoint.rotation);
     }
 
-    /*
+    /// <summary>
+    /// This spawns a fast mouse if the chance is within range.
+    /// </summary>
     public void SpawnFastEnemy()
-    {      
-        if (spawnPointBool)
+    {
+        float spawnChance = Random.Range(0f, 1f);
+        if (spawnChance < fastSpawnChance)
         {
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            Debug.Log(spawnChance);
+            if (spawnPointBool)
+            {
+                Instantiate(fastEnemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            }
+            else
+                Instantiate(fastEnemyPrefab, spawnPoint2.position, spawnPoint.rotation);
         }
-        else
-            Instantiate(enemyPrefab, spawnPoint2.position, spawnPoint.rotation);
     }
-    */
+    
 }

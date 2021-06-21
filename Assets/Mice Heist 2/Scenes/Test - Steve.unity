@@ -533,8 +533,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00005340576, y: -73.913}
-  m_SizeDelta: {x: -12.467, y: -147.825}
+  m_AnchoredPosition: {x: 0.00005340576, y: -63.871}
+  m_SizeDelta: {x: -12.467, y: -127.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83167424
 MonoBehaviour:
@@ -562,14 +562,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Barrier
+  m_Text: 'Pizza Barrier
 
     Cost: 150'
 --- !u!222 &83167425
@@ -2048,7 +2048,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.392, y: 28.867}
-  m_SizeDelta: {x: 162.983, y: 119.266}
+  m_SizeDelta: {x: 123.187, y: 119.266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283557169
 MonoBehaviour:
@@ -2070,7 +2070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 57227084522d1b4418fdf82a5e58963e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3824,7 +3824,7 @@ MonoBehaviour:
     towerPrefab: {fileID: 8604731087773355311, guid: 657b5e9a033ab77409e0f7653df21aab, type: 3}
   rangedTower:
     towerName: Ranged Tower
-    towerCost: 300
+    towerCost: 500
     towerPrefab: {fileID: 2321707140289196247, guid: 99ee6ca084a6cc74f9a08493c3265944, type: 3}
   barrier:
     towerName: Barrier
@@ -4087,7 +4087,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000021458, y: 28.867012}
-  m_SizeDelta: {x: 162.983, y: 119.266}
+  m_SizeDelta: {x: 108.716, y: 119.266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676254184
 MonoBehaviour:
@@ -4109,7 +4109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5c6ee30caa5035149a56db89a5cefcf2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4649,6 +4649,7 @@ GameObject:
   - component: {fileID: 771265488}
   - component: {fileID: 771265487}
   - component: {fileID: 771265491}
+  - component: {fileID: 771265492}
   m_Layer: 0
   m_Name: Plane - Ground
   m_TagString: Untagged
@@ -4762,6 +4763,35 @@ MonoBehaviour:
   m_VoxelSize: 0.33333334
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 9fa232b038729c64db06773c9c730658, type: 2}
+--- !u!114 &771265492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771265486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: -1372625422
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.33333334
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 2296aac414d89ed47a9c4db8e5adf5e6, type: 2}
 --- !u!1 &771391743
 GameObject:
   m_ObjectHideFlags: 0
@@ -5304,11 +5334,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ranged
+  m_Text: 'Hairball Cat
 
-    Tower
-
-    Cost: 600'
+    Cost: 500'
 --- !u!222 &853978539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8530,7 +8558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 44024080e8f129a40ac8ffc5881b5e4a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8712,7 +8740,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Standard \nTower\nCost: 200"
+  m_Text: 'Yarn Cat
+
+    Cost: 200'
 --- !u!222 &1440503179
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10412,7 +10442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92beec36993c52488d05073352c3ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 500
+  startMoney: 600
   startLives: 20
   endPanel: {fileID: 978176146}
 --- !u!4 &1839032159
@@ -10442,9 +10472,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 4063791875719811884, guid: 3cfb899a18d2ac64aa243893dbddba1f, type: 3}
+  fastEnemyPrefab: {fileID: 2332990349270443770, guid: f86661266cde1c44abcd2bd198c9f0e6, type: 3}
   spawnPoint: {fileID: 1227313351}
   spawnPoint2: {fileID: 2002196376}
   timeBetweenWaves: 10
+  fastSpawnChance: 0.089
   waveNumberText: {fileID: 648208958}
   waveCountdownText: {fileID: 877992401}
 --- !u!114 &1839032161
