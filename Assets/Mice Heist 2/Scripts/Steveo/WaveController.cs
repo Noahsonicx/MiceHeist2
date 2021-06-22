@@ -48,7 +48,7 @@ public class WaveController : MonoBehaviour
         {
             SpawnEnemy();
             // This gives the player a chance to have a few towers on the field before we hit them with a faster mouse.
-            if (waveNumber > 7)
+            if (waveNumber > 10)
             {
                 SpawnFastEnemy();
             }

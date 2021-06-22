@@ -10475,7 +10475,7 @@ MonoBehaviour:
   fastEnemyPrefab: {fileID: 2332990349270443770, guid: f86661266cde1c44abcd2bd198c9f0e6, type: 3}
   spawnPoint: {fileID: 1227313351}
   spawnPoint2: {fileID: 2002196376}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 15
   fastSpawnChance: 0.089
   waveNumberText: {fileID: 648208958}
   waveCountdownText: {fileID: 877992401}
