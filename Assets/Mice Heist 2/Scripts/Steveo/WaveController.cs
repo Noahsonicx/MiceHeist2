@@ -69,7 +69,7 @@ public class WaveController : MonoBehaviour
             if (waveNumber > 50)
             {
                 timeBetweenWaves = 30;
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.75f);
             }
             else
                 yield return new WaitForSeconds(0.5f);
