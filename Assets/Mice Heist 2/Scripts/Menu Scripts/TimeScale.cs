@@ -8,22 +8,24 @@ public class TimeScale : MonoBehaviour
     {
         if(Time.timeScale == 1.0f)
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {
-            gameObject.SetActive(true);
+            gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
     }
     public void OnClickUnPause()
     {
-        if (Time.timeScale == 1.0f)
+        if (Time.timeScale == 0)
         {
-            gameObject.SetActive(true);
+            gameObject.SetActive(false);
         }
         else
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
         }
     }
 
