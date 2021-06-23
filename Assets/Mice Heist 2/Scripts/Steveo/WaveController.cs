@@ -14,7 +14,7 @@ public class WaveController : MonoBehaviour
     public float timeBetweenWaves = 10f;
 
     private float countDown = 2f;
-    private int waveNumber = 1;
+    [SerializeField] private int waveNumber = 1;
     private bool spawnPointBool = true;
     [SerializeField ,Range(0,1)]private float spawnChance = 0.2f;
 
@@ -100,7 +100,7 @@ public class WaveController : MonoBehaviour
 
         if (_spawnChance < spawnChance)
         {
-            Debug.Log(spawnChance);
+            
             if (spawnPointBool)
             {
                 Instantiate(fastEnemyPrefab, spawnPoint.position, spawnPoint.rotation);
@@ -122,7 +122,7 @@ public class WaveController : MonoBehaviour
         }
         if (_spawnChance < spawnChance)
         {
-            Debug.Log(spawnChance);
+            
             if (spawnPointBool)
             {
                 Instantiate(strongEnemyPrefab, spawnPoint.position, spawnPoint.rotation);

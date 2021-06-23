@@ -49,22 +49,34 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        float distance = Vector3.Distance(transform.position, target.position);
         
+        Debug.Log(distance);
+        if (!agent.pathPending && distance<= 1.5)
+        {
+            StartCoroutine(EndPath());
+        }
+        
+        /*
         //Has the agent reached its position?
         if (!agent.pathPending && agent.remainingDistance < 0.1f)
         {
-            EndPath();
+
+            StartCoroutine(EndPath());
         }
+        */
         
     }
     
     /// <summary>
     /// Called when the mouse reaches the end point
     /// </summary>
-    void EndPath()
+    IEnumerator EndPath()
     {
+        
+        yield return new WaitForEndOfFrame();
         // Reduces player lives and destroys the mouse
         PlayerStats.Lives--;
         Destroy(gameObject);
