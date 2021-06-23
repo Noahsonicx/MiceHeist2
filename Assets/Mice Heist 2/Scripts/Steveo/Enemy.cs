@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-
+        
         //Has the agent reached its position?
         if (!agent.pathPending && agent.remainingDistance < 0.1f)
         {

@@ -571,7 +571,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Pizza Barrier
 
-    Cost: 25'
+    Cost: 10'
 --- !u!222 &83167425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3955,11 +3955,11 @@ MonoBehaviour:
     towerPrefab: {fileID: 8604731087773355311, guid: 657b5e9a033ab77409e0f7653df21aab, type: 3}
   rangedTower:
     towerName: Ranged Tower
-    towerCost: 500
+    towerCost: 700
     towerPrefab: {fileID: 2321707140289196247, guid: 99ee6ca084a6cc74f9a08493c3265944, type: 3}
   barrier:
     towerName: Barrier
-    towerCost: 25
+    towerCost: 10
     towerPrefab: {fileID: 6705599724095584888, guid: 214185c86dee6cd429f315aeada8a182, type: 3}
 --- !u!1001 &638591841
 PrefabInstance:
@@ -5679,7 +5679,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Hairball Cat
 
-    Cost: 500'
+    Cost: 700'
 --- !u!222 &853978539
 CanvasRenderer:
   m_ObjectHideFlags: 0
