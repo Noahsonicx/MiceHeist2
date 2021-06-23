@@ -11,7 +11,7 @@ public class WaveController : MonoBehaviour
     public Transform strongEnemyPrefab;
     public Transform spawnPoint;
     public Transform spawnPoint2;
-    public float timeBetweenWaves = 10f;
+    public float timeBetweenWaves = 15f;
 
     private float countDown = 2f;
     [SerializeField] private int waveNumber = 1;
@@ -66,7 +66,13 @@ public class WaveController : MonoBehaviour
             {
                 SpawnStrongEnemy();
             }
-            yield return new WaitForSeconds(0.5f);
+            if (waveNumber > 50)
+            {
+                timeBetweenWaves = 30;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+                yield return new WaitForSeconds(0.5f);
         }
 
         waveNumber++; // Sets the wave number to next wave

@@ -82,3 +82,11 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 }
+/*Notes:
+ * I had an issue where in the higher level waves, lives were being removed but no mice were getting through to the waypoints.
+ * I seem to have fixed this by putting the test in fixed update, and using a distance float as part of the test instead of agent.remainingdistance.
+ * 
+ * The amount of mice spawning in the higher levels, eg. above 55, are now choicking the spawn point, maybe I should increase the wait for the spawnwave
+ * on WaveController.
+ * 
+ */
