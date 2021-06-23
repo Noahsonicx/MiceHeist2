@@ -11058,7 +11058,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1227313351}
   spawnPoint2: {fileID: 2002196376}
   timeBetweenWaves: 15
-  SpawnChance: 0.2
+  spawnChance: 0.2
   waveNumberText: {fileID: 648208958}
   waveCountdownText: {fileID: 877992401}
 --- !u!114 &1839032161
