@@ -402,7 +402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000071526, y: 0.0000090599}
+  m_AnchoredPosition: {x: -0.0000071526, y: -210}
   m_SizeDelta: {x: 183.154, y: 197.416}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73268131
@@ -571,7 +571,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Pizza Barrier
 
-    Cost: 150'
+    Cost: 25'
 --- !u!222 &83167425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1311,7 +1311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022411, y: -213}
+  m_AnchoredPosition: {x: -0.000022411, y: 218}
   m_SizeDelta: {x: 183.154, y: 197.416}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195973293
@@ -3871,7 +3871,7 @@ MonoBehaviour:
     towerPrefab: {fileID: 2321707140289196247, guid: 99ee6ca084a6cc74f9a08493c3265944, type: 3}
   barrier:
     towerName: Barrier
-    towerCost: 150
+    towerCost: 25
     towerPrefab: {fileID: 6705599724095584888, guid: 214185c86dee6cd429f315aeada8a182, type: 3}
 --- !u!1001 &638591841
 PrefabInstance:
@@ -10487,7 +10487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5861523907348830003, guid: 03778821c28754849a8354fd2a528251, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5861523907348830005, guid: 03778821c28754849a8354fd2a528251, type: 3}
       propertyPath: m_Type
@@ -11054,10 +11054,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 4063791875719811884, guid: 3cfb899a18d2ac64aa243893dbddba1f, type: 3}
   fastEnemyPrefab: {fileID: 2332990349270443770, guid: f86661266cde1c44abcd2bd198c9f0e6, type: 3}
+  strongEnemyPrefab: {fileID: 4063791875719811884, guid: 81a323c1fad366642b5fe5591200f252, type: 3}
   spawnPoint: {fileID: 1227313351}
   spawnPoint2: {fileID: 2002196376}
   timeBetweenWaves: 15
-  fastSpawnChance: 0.089
+  SpawnChance: 0.2
   waveNumberText: {fileID: 648208958}
   waveCountdownText: {fileID: 877992401}
 --- !u!114 &1839032161
@@ -11720,7 +11721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000039101, y: 215}
+  m_AnchoredPosition: {x: 0.000039101, y: 3}
   m_SizeDelta: {x: 183.154, y: 197.416}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911818665

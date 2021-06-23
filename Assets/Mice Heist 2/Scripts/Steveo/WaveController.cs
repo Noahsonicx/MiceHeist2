@@ -8,6 +8,7 @@ public class WaveController : MonoBehaviour
     [Header("Wave Attributes")]
     public Transform enemyPrefab;
     public Transform fastEnemyPrefab;
+    public Transform strongEnemyPrefab;
     public Transform spawnPoint;
     public Transform spawnPoint2;
     public float timeBetweenWaves = 10f;
@@ -15,7 +16,7 @@ public class WaveController : MonoBehaviour
     private float countDown = 2f;
     private int waveNumber = 1;
     private bool spawnPointBool = true;
-    [SerializeField ,Range(0,1)]private float fastSpawnChance = 0.2f;
+    [SerializeField ,Range(0,1)]private float spawnChance = 0.2f;
 
 
     [Header("Wave UI Elements")]
@@ -43,14 +44,22 @@ public class WaveController : MonoBehaviour
     /// Coroutine for spawning enemys one after another. Spawns the same amount of enemies as the wave number.
     /// </summary>
     IEnumerator SpawnWave()
-    {        
+    {
+        
         for (int i = 0; i < waveNumber; i++)
         {
-            SpawnEnemy();
+            if (waveNumber < 25)
+            {
+                SpawnEnemy();
+            }
             // This gives the player a chance to have a few towers on the field before we hit them with a faster mouse.
             if (waveNumber > 10)
             {
                 SpawnFastEnemy();
+            }
+            if (waveNumber > 16)
+            {
+                SpawnStrongEnemy();
             }
             yield return new WaitForSeconds(0.5f);
         }
@@ -78,8 +87,13 @@ public class WaveController : MonoBehaviour
     /// </summary>
     public void SpawnFastEnemy()
     {
-        float spawnChance = Random.Range(0f, 1f);
-        if (spawnChance < fastSpawnChance)
+        float _spawnChance = Random.Range(0f, 1f);
+        if (waveNumber > 25)
+        {
+            _spawnChance = Random.Range(0f, 0.5f);
+        }
+
+        if (_spawnChance < spawnChance)
         {
             Debug.Log(spawnChance);
             if (spawnPointBool)
@@ -90,5 +104,27 @@ public class WaveController : MonoBehaviour
                 Instantiate(fastEnemyPrefab, spawnPoint2.position, spawnPoint.rotation);
         }
     }
-    
+
+    /// <summary>
+    /// This spawns a strong mouse if the chance is within range.
+    /// </summary>
+    public void SpawnStrongEnemy()
+    {
+        float _spawnChance = Random.Range(0f, 1f);
+        if (waveNumber > 25)
+        {
+            _spawnChance = Random.Range(0f, 0.5f);
+        }
+        if (_spawnChance < spawnChance)
+        {
+            Debug.Log(spawnChance);
+            if (spawnPointBool)
+            {
+                Instantiate(strongEnemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            }
+            else
+                Instantiate(strongEnemyPrefab, spawnPoint2.position, spawnPoint.rotation);
+        }
+    }
+
 }
