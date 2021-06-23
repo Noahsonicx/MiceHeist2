@@ -22,6 +22,7 @@ public class TimeScale : MonoBehaviour
         if (Time.timeScale == 0)
         {
             gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
         else
         {

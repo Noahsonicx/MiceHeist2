@@ -23,6 +23,11 @@ public class WaveController : MonoBehaviour
     public Text waveNumberText;
     public Text waveCountdownText;
 
+    public void Start()
+    {
+        Time.timeScale = 0;
+    }
+
     private void Update()
     {
         // When the countdown reaches 0 start spawning next wave
