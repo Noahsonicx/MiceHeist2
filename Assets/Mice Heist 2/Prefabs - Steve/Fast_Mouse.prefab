@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  value: 35
+  value: 20
 --- !u!1 &3384310300765283505
 GameObject:
   m_ObjectHideFlags: 0

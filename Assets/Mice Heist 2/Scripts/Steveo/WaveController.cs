@@ -13,7 +13,7 @@ public class WaveController : MonoBehaviour
     public Transform spawnPoint2;
     public float timeBetweenWaves = 15f;
 
-    private float countDown = 2f;
+    private float countDown = 10f;
     [SerializeField] private int waveNumber = 1;
     private bool spawnPointBool = true;
     [SerializeField ,Range(0,1)]private float spawnChance = 0.2f;
@@ -30,9 +30,17 @@ public class WaveController : MonoBehaviour
 
     private void Update()
     {
+        // This is if the player ever gets above wave 150.
+        if (waveNumber > 150)
+        {
+            timeBetweenWaves = 45;
+        }
+
         // When the countdown reaches 0 start spawning next wave
         if (countDown <= 0)
         {
+            waveNumber++;
+            // Maybe put the wavenumber increment call here? instead of after the coroutine?? would coincide with the timer counting down.
             StartCoroutine(SpawnWave());
             countDown = timeBetweenWaves; // reset timer
         }
@@ -69,13 +77,13 @@ public class WaveController : MonoBehaviour
             if (waveNumber > 50)
             {
                 timeBetweenWaves = 30;
-                yield return new WaitForSeconds(0.75f);
+                yield return new WaitForSeconds(0.2f);
             }
             else
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.3f);
         }
 
-        waveNumber++; // Sets the wave number to next wave
+        
         spawnPointBool = !spawnPointBool; // This bool then switches so the next wave spawns at the other spawn point
         Debug.Log("Wave incoming");
     }

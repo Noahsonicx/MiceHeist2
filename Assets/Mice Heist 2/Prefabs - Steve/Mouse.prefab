@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  value: 35
+  value: 20
 --- !u!135 &1254351482794961178
 SphereCollider:
   m_ObjectHideFlags: 0
