@@ -419,6 +419,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5861523906774731411, guid: 03778821c28754849a8354fd2a528251, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861523906774731411, guid: 03778821c28754849a8354fd2a528251, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861523906774731411, guid: 03778821c28754849a8354fd2a528251, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861523906774731411, guid: 03778821c28754849a8354fd2a528251, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 5861523906774731413, guid: 03778821c28754849a8354fd2a528251, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -502,6 +518,14 @@ PrefabInstance:
     - target: {fileID: 5861523906774731413, guid: 03778821c28754849a8354fd2a528251, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861523906966173267, guid: 03778821c28754849a8354fd2a528251, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861523906966173267, guid: 03778821c28754849a8354fd2a528251, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 294
       objectReference: {fileID: 0}
     - target: {fileID: 5861523908540645209, guid: 03778821c28754849a8354fd2a528251, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
