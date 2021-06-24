@@ -481,6 +481,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 805939260113928536, guid: b5fcd4c8429548f4e94dcef413b1044d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 805939260223202314, guid: b5fcd4c8429548f4e94dcef413b1044d, type: 3}
       propertyPath: m_Name
       value: Options Menu Panel
