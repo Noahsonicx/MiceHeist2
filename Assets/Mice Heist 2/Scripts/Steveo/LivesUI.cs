@@ -12,6 +12,6 @@ public class LivesUI : MonoBehaviour
     void Update()
     {
         // Updates the lives text on the UI
-        livesText.text = PlayerStats.Lives + " Lives";
+        livesText.text = PlayerStats.Lives + " Pieces of Cheese";
     }
 }
